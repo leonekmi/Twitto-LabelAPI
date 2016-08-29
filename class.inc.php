@@ -15,7 +15,8 @@ function getInfo($user) {
   return json_decode(file_get_contents("https://www.twittolabel.tech/api/getuserinfo.php?user=" . $user), true);
 }
 
-function getUsers($label) {
+// Ne rien préciser si vous voulez obtenir la liste entière
+function getUsers($label = '') {
   /*
   https://github.com/leonekmi/Twitto-LabelAPI/wiki/getusers
   GetUsers
