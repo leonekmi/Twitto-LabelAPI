@@ -40,5 +40,13 @@ function search($user) {
   return json_decode(file_get_contents("https://www.twittolabel.tech/api/search.php?user=" . $user), true);
 }
 
+function postRating($user, $rate) {
+  /*
+  https://github.com/leonekmi/Twitto-LabelAPI/wiki/postrating
+  PostRating
+  */
+  return json_decode(file_get_contents("https://www.twittolabel.tech/api/postrating.php?name=" . $user . "&rate=" . $rate), true);
+}
+
 }
 
