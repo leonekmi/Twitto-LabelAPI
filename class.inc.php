@@ -4,7 +4,8 @@ class TLAI {
 /**
  * API Twitto'Label
  *
- * @license CC Attribution 3.0
+ * @license CC Attribution 4.0 International
+ * @author leonekmi
  */
 
 function getInfo($user) {
